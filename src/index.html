@@ -28,46 +28,6 @@
             <div id="footer">
                 Clear all completed
             </div>
-
-
-
-            <!-- const editTask = () => {
-                const editTaskBtns = [...editInput];
-                editTaskBtns.forEach((item) => {
-                  item.addEventListener('click', () => {
-                    
-                    const editTaskEls = [...editTaskEl];
-                    const currentTask = editTaskEls[item.id];
-                    const currentTaskEdit = currentTask.childNodes[1];
-                    toDoTask[item.id].classList.add('hide');
-                    currentTask.classList.remove('hide');
-                    currentTaskEdit.value = items[item.id].description;
-                    currentTask.childNodes[2].addEventListener('click', () => {
-                      const editedTask = currentTask.childNodes[1].value;
-                      if (editedTask) {
-                        items[item.id].description = editedTask;
-                        localStorage.setItem('items', JSON.stringify(items));
-                        renderItems();
-                      } else {
-                        currentTaskEdit.classList.add('inputError');
-                        setTimeout(() => {
-                          currentTaskEdit.classList.remove('inputError');
-                        }, 1000);
-                      }
-                    });
-                  });
-                });
-              }; -->
-
-
-
-
-
-
-
-
-
-
         </section>
     </main>
 </body>
