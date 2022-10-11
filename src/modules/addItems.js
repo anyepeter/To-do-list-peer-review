@@ -55,13 +55,13 @@ const renderItems = () => {
 
     check.forEach((eleme) => {
       eleme.addEventListener('click', () => {
-        const man = eleme.parentElement.parentElement.id;
-        const { completed } = items[man];
+        const checkBoxId = eleme.parentElement.parentElement.id;
+        const { completed } = items[checkBoxId];
 
         if (completed) {
-          items[man].completed = false;
+          items[checkBoxId].completed = false;
         } else {
-          items[man].completed = true;
+          items[checkBoxId].completed = true;
         }
         localStorage.setItem('items', JSON.stringify(items));
       });
